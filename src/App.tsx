@@ -10,7 +10,6 @@ function App() {
     const fetchWords = useCallback(async () => {
         const request = await fetch("data/words.json");
         const data = await request.json();
-        debugger;
         setWords(data);
     }, [])
 
